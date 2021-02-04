@@ -101,9 +101,38 @@ ul {
   margin-bottom: 25px;
 }
 .video {
-  background-image: url("..images/video-bg.jpg");
+  background-image: url("../images/video-bg.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  text-align: right;
+}
+.video-text {
+  font-family: Roboto Condensed;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 84px;
+  color: #85ccdc;
+  padding-top: 350px;
+  margin-bottom: 40px;
+}
+.video-text span {
+  display: block;
+  padding-right: 285px;
+}
+.video-btn {
+  border-left: 112px;
+  position: relative;
+  margin-right: 230px;
+}
+.video-btn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: -115px;
+  top: -40px;
+  background-image: url("../images/logoyou.svg");
 }
