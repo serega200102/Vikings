@@ -136,3 +136,21 @@ ul {
   top: -40px;
   background-image: url("../images/logoyou.svg");
 }
+.seasons__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 100px 75px;
+  counter-reset: counter;
+}
+.seasons__item {
+  width: 350px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  list-style: none;
+}
+.seasons__item::before {
+  content: counter(counter);
+  counter-increment: "0" counter(counter);
+}
