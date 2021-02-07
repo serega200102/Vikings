@@ -10,7 +10,11 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
-
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -82,7 +86,7 @@ ul {
 .logo {
   padding-top: 155px;
 }
-.aboit__inner {
+.about__inner {
   display: flex;
 }
 .about__info {
@@ -135,4 +139,48 @@ ul {
   left: -115px;
   top: -40px;
   background-image: url("../images/logoyou.svg");
+}
+.season-block__item {
+  margin-bottom: 50px;
+}
+.season-block__item-num {
+  display: block;
+}
+.season__item_in {
+  width: 350px;
+  height: 250px;
+  display: block;
+  position: relative;
+}
+.season__item_in:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+.season__item_in:hover:after {
+  opacity: 1;
+}
+.seas1 {
+  background-image: url(../images/season1.png);
+}
+.seas2 {
+  background-image: url(../images/season2.jpg);
+}
+.seas3 {
+  background-image: url(../images/season3.png);
+}
+.seas4 {
+  background-image: url(../images/season4.png);
+}
+.seas5 {
+  background-image: url(../images/season5.png);
+}
+.seas6 {
+  background-image: url(../images/season6.png);
 }
